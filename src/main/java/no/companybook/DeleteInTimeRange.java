@@ -37,8 +37,8 @@ class DeleteInTimeRange {
                 .collect(Collectors.toList());
         String tableName = args[5];
         long minRequiredTimestamp = Long.parseLong(args[6]);
-        String startRow = args[7].toUpperCase();
-        String stopRow = args[8].toUpperCase();
+        String startRow = args[7];
+        String stopRow = args[8];
 
         Configuration config = new Configuration();
         configure(config, quorum, port, parent);
